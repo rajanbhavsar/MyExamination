@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        android:id="@+id/mCardView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="@dimen/margin_tendp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardBackgroundColor="@android:color/white">
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/mTitleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_tendp">
+
+        <TextView
+                android:id="@+id/mTextViewTitleFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Rajan Bhavsar"
+                android:textStyle="bold"
+                android:textColor="@color/color_feed_title"
+                android:textSize="@dimen/dimen_feed_item_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/mTextViewTitleFeed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                    android:id="@+id/mImageViewUser"
+                    android:layout_width="@dimen/dimens_user_image"
+                    android:layout_height="@dimen/dimens_user_image"
+                    android:src="@mipmap/ic_launcher"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                    android:id="@+id/mTextViewFeedDesc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginEnd="@dimen/margin_fivedp"
+                    app:layout_constraintEnd_toStartOf="@+id/mImageViewUser"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

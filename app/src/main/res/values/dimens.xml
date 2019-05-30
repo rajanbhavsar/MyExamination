@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_feed_item_title">17sp</dimen>
+    <dimen name="margin_tendp">10dp</dimen>
+    <dimen name="margin_fivedp">5dp</dimen>
+    <dimen name="dimens_user_image">80dp</dimen>
+</resources>

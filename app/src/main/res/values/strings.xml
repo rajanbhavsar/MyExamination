@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Examination</string>
+
+
+    <string name="lab_no_internet_connection">No Internet connection</string>
+    <string name="lab_error_api">Something went wrong, Please try again.</string>
+    <string name="label_no_records_found">No Records Found</string>
+    <string name="label_pull_to_refresh">Pull To Refresh \n With Internet Connection</string>
+</resources>
